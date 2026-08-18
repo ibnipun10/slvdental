@@ -94,7 +94,7 @@ export default function Footer({ onOpenBooking }) {
             © {new Date().getFullYear()} {CLINIC_INFO.name}. Birla Circle, Haralur Main Road, Bangalore.
           </div>
           <div>
-            Doctor Consultation Fee: ₹350
+            Dr. Abhisheak R Naik (BDS, MDS) • 15+ Yrs Experience
           </div>
         </div>
       </div>

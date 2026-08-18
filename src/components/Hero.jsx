@@ -52,7 +52,7 @@ export default function Hero({ onOpenBooking }) {
             <div className="hero-cta-group">
               <button onClick={() => onOpenBooking()} className="btn btn-primary btn-lg">
                 <Calendar size={18} />
-                <span>Book Appointment (₹350)</span>
+                <span>Book Appointment</span>
               </button>
 
               <a 
@@ -74,7 +74,7 @@ export default function Hero({ onOpenBooking }) {
             {/* Trust Micro-bar */}
             <div className="hero-trust-note">
               <ShieldCheck size={16} />
-              <span>₹350 Consultation • Birla Circle, Haralur • 100% Sterilized Operatory</span>
+              <span>Birla Circle, Haralur • Open All 7 Days • 100% Sterilized Operatory</span>
             </div>
           </div>
 

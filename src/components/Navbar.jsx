@@ -68,7 +68,7 @@ export default function Navbar({ onOpenBooking }) {
               className="btn btn-primary btn-sm"
             >
               <Calendar size={15} />
-              <span>Book ₹350</span>
+              <span>Book Appointment</span>
             </button>
 
             {/* Mobile Menu Toggle */}
@@ -111,7 +111,7 @@ export default function Navbar({ onOpenBooking }) {
                 style={{ width: '100%' }}
               >
                 <Calendar size={18} />
-                <span>Book Appointment (₹350)</span>
+                <span>Book Appointment</span>
               </button>
 
               <a 

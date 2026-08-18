@@ -56,7 +56,7 @@ export default function TimingsAndLocation({ onOpenBooking }) {
             <div className="schedule-btn-group">
               <button onClick={() => onOpenBooking()} className="btn btn-primary" style={{ flex: '1 1 auto' }}>
                 <Calendar size={15} />
-                <span>Book Appointment (₹350)</span>
+                <span>Book Appointment</span>
               </button>
               <a 
                 href={`https://wa.me/${contact.whatsappNumber}?text=Hi%20SLV%20Dental,%20is%20a%20slot%20available%20today?`}

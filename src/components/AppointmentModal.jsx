@@ -64,7 +64,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
             <div className="modal-header">
               <span className="prime-verified-badge" style={{ marginBottom: '8px' }}>
                 <ShieldCheck size={14} />
-                Doctor Consultation: ₹350
+                Doctor Consultation & Diagnostic Checkup
               </span>
               <h3>Book Dental Appointment</h3>
               <p>Reserve your slot with Dr. Abhisheak R Naik at Birla Circle, Haralur.</p>
@@ -80,7 +80,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
                   onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
                   required
                 >
-                  <option value="General Consultation & Checkup">General Consultation & Checkup (₹350)</option>
+                  <option value="General Consultation & Checkup">General Consultation & Checkup</option>
                   <option value="Severe Toothache / Emergency">Acute Toothache / Emergency</option>
                   {allTreatments.map((s) => (
                     <option key={s.id} value={s.title}>

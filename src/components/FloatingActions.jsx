@@ -46,7 +46,7 @@ export default function FloatingActions({ onOpenBooking }) {
             aria-label="Book Appointment"
           >
             <Calendar size={17} />
-            <span>Book (₹350)</span>
+            <span>Book Appt</span>
           </button>
         </div>
       </div>

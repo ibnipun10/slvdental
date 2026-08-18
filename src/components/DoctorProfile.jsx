@@ -67,7 +67,7 @@ export default function DoctorProfile({ onOpenBooking }) {
             <div className="doctor-cta-row">
               <button onClick={() => onOpenBooking()} className="btn btn-primary">
                 <Calendar size={16} />
-                <span>Book Doctor Consultation (₹350)</span>
+                <span>Book Doctor Consultation</span>
               </button>
 
               <a 

@@ -29,7 +29,6 @@ export const CLINIC_INFO = {
     name: "Dr. Abhisheak R Naik",
     degrees: "BDS, MDS - Oral Medicine & Radiology",
     experienceYears: 15,
-    consultationFee: 350,
     rating: 5.0,
     votesCount: "455+",
     photo: drPhoto,
@@ -234,8 +233,8 @@ export const FAQS = [
     a: "Yes, we are open all 7 days a week from 10:00 AM to 01:30 PM (Morning) and 05:00 PM to 09:00 PM (Evening)."
   },
   {
-    q: "How much is the doctor consultation fee?",
-    a: "The consultation fee is ₹350. There are no hidden fees or surprise booking charges."
+    q: "Do I need an appointment or are walk-ins accepted?",
+    a: "Both walk-ins and booked appointments are welcome. Booking in advance helps you get your preferred time slot with zero wait time."
   },
   {
     q: "Where is the clinic located in Haralur?",
