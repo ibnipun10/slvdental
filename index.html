@@ -1,0 +1,2893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLV Dental Clinic & Implant Centre | Dr. Abhisheak R Naik | Haralur, Bangalore</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SLV Dental Clinic & Implant Centre in Haralur, Bangalore. Led by Dr. Abhisheak R Naik (BDS, MDS - Oral Medicine & Radiology). 5.0★ Rating, 455+ verified stories. Painless RCT, Dental Implants, 15-min Wisdom Tooth Extraction & Cosmetic Dentistry. Open all 7 days." />
+  <meta name="keywords" content="SLV Dental Clinic, Dentist Haralur, Dental Clinic Birla Circle, Dr Abhisheak R Naik, Dental Implants Haralur, Root Canal Bangalore, Wisdom Tooth Extraction Haralur, HSR Layout Dentist" />
+  <meta name="author" content="SLV Dental Clinic & Implant Centre" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       SLV DENTAL CLINIC - DESIGN SYSTEM & STYLES (PURE STATIC & SERVERLESS)
+       ========================================================================== */
+    :root {
+      --primary: #0d7c8a;
+      --primary-hover: #0a626d;
+      --primary-light: #e6f6f8;
+      --primary-glow: rgba(13, 124, 138, 0.15);
+      --secondary: #0f766e;
+      --secondary-light: #f0fdfa;
+      --accent: #f59e0b;
+      --accent-light: #fef3c7;
+      --accent-gold: #d97706;
+      --success: #10b981;
+      --success-light: #ecfdf5;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --text-white: #ffffff;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-alt: #f1f5f9;
+      --bg-soft-teal: #f2fbfa;
+      --border-subtle: #e2e8f0;
+      --border-card: #cbd5e1;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --max-width: 1240px;
+      --header-height: 80px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--text-main);
+      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .section {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .section-alt {
+      background-color: var(--bg-soft-teal);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px auto;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 2.35rem;
+      margin-bottom: 16px;
+      color: #0f172a;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: var(--text-white);
+      box-shadow: 0 4px 14px rgba(13, 124, 138, 0.35);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(13, 124, 138, 0.45);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-card);
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebc57;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.875rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-lg {
+      padding: 15px 30px;
+      font-size: 1.05rem;
+      border-radius: var(--radius-lg);
+    }
+
+    .btn-outline-dark {
+      background-color: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-card);
+    }
+
+    .btn-outline-dark:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background-color: var(--primary-light);
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background-color: #092c35;
+      color: #e2e8f0;
+      font-size: 0.825rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-left, .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #cbd5e1;
+    }
+
+    .top-bar-item strong {
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all 0.25s ease;
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-height);
+      gap: 24px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon-box {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--primary) 0%, #0891b2 100%);
+      color: #ffffff;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(13, 124, 138, 0.3);
+      font-size: 1.4rem;
+    }
+
+    .brand-text h1 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.925rem;
+      font-weight: 600;
+      color: var(--text-main);
+      padding: 6px 0;
+      position: relative;
+      transition: color 0.15s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      padding: 8px;
+      color: var(--text-main);
+      font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      padding: 60px 0 80px 0;
+      overflow: hidden;
+      background: radial-gradient(circle at 10% 20%, rgba(230, 246, 248, 0.7) 0%, rgba(255, 255, 255, 1) 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 640px;
+    }
+
+    .hero-rating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+      font-size: 0.875rem;
+    }
+
+    .hero-rating-stars {
+      display: flex;
+      color: #f59e0b;
+    }
+
+    .hero-rating-text {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .hero-rating-text span {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: 3.1rem;
+      line-height: 1.15;
+      color: #092c35;
+      margin-bottom: 20px;
+    }
+
+    .hero-title .highlight-text {
+      color: var(--primary);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-desc {
+      font-size: 1.125rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .hero-highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .hero-highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.925rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .hero-highlight-item span.check {
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .hero-fee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #f0fdf4;
+      border: 1px dashed #86efac;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      color: #166534;
+      font-weight: 600;
+    }
+
+    .hero-visual-card {
+      position: relative;
+      background-color: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 16px;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .hero-main-img-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      height: 380px;
+    }
+
+    .hero-main-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-floating-doctor {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-doc-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+      flex-shrink: 0;
+    }
+
+    .hero-doc-info h4 {
+      font-size: 1rem;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .hero-doc-info p {
+      font-size: 0.775rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .hero-floating-badge-top {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      background-color: #ffffff;
+      padding: 10px 16px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 2;
+    }
+
+    .badge-circle-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    /* Stats Strip */
+    .stats-strip {
+      background-color: #092c35;
+      color: #ffffff;
+      padding: 36px 0;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: -30px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 0 16px;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-value {
+      font-size: 2.3rem;
+      font-weight: 800;
+      font-family: var(--font-heading);
+      color: #38bdf8;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+
+    .stat-sublabel {
+      font-size: 0.775rem;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+    /* Doctor Card */
+    .doctor-card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+
+    .doctor-img-container {
+      position: relative;
+      background-color: var(--bg-soft-teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .doctor-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 420px;
+    }
+
+    .doctor-experience-tag {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(9, 44, 53, 0.9);
+      color: #ffffff;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 10px 16px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+
+    .doctor-details {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .doctor-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .prime-verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #e0f2fe;
+      color: #0284c7;
+      font-size: 0.775rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .recommend-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #dcfce7;
+      color: #15803d;
+      font-size: 0.775rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .doctor-name {
+      font-size: 2rem;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .doctor-degrees {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .doctor-bio {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .doctor-pillars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .pillar-box {
+      background-color: var(--bg-soft-teal);
+      border: 1px solid rgba(13, 124, 138, 0.2);
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+    }
+
+    .pillar-box h5 {
+      font-size: 0.9rem;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .pillar-box p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .doctor-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Services & Tabs */
+    .services-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      padding: 9px 18px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      background-color: #ffffff;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .tab-btn.active {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(13, 124, 138, 0.3);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(13, 124, 138, 0.4);
+    }
+
+    .service-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      gap: 12px;
+    }
+
+    .service-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.3rem;
+    }
+
+    .service-tag {
+      font-size: 0.725rem;
+      font-weight: 700;
+      background-color: #f1f5f9;
+      color: #475569;
+      padding: 4px 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    .service-title {
+      font-size: 1.2rem;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .service-benefits-list {
+      list-style: none;
+      margin-bottom: 20px;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 14px;
+    }
+
+    .service-benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.825rem;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+
+    .service-benefit-item span.bullet {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: auto;
+    }
+
+    .service-duration {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .service-action-link {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .service-action-link:hover {
+      color: var(--primary-hover);
+    }
+
+    /* Why Grid */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .why-card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+    }
+
+    .why-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .why-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .why-title {
+      font-size: 1.15rem;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .why-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Reviews Section */
+    .reviews-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .reviews-score-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 10px 18px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .score-num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background-color: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .review-stars {
+      display: flex;
+      color: #f59e0b;
+      font-size: 0.9rem;
+    }
+
+    .review-source-pill {
+      font-size: 0.725rem;
+      font-weight: 700;
+      color: #0284c7;
+      background-color: #e0f2fe;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+    }
+
+    .review-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .review-quote-highlight {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.45;
+      margin-bottom: 14px;
+      position: relative;
+      padding-left: 14px;
+      border-left: 3px solid var(--primary);
+    }
+
+    .review-body {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .review-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 14px;
+      margin-top: auto;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #0f172a;
+    }
+
+    .reviewer-treatment {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      height: 280px;
+      background-color: #000000;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-card:hover .gallery-img {
+      transform: scale(1.06);
+      opacity: 0.9;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(9, 44, 53, 0.95) 0%, rgba(9, 44, 53, 0.4) 60%, transparent 100%);
+      color: #ffffff;
+    }
+
+    .gallery-overlay h4 {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .gallery-overlay p {
+      font-size: 0.775rem;
+      color: #cbd5e1;
+    }
+
+    /* Timings & Location */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .schedule-card, .location-card {
+      background-color: #ffffff;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .schedule-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .open-all-days-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background-color: #dcfce7;
+      color: #15803d;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+    }
+
+    .schedule-sessions-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .session-box {
+      background-color: var(--bg-soft-teal);
+      border: 1px solid rgba(13, 124, 138, 0.2);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    .session-box h5 {
+      font-size: 0.85rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .session-box p {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .schedule-table tr {
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .schedule-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-table td {
+      padding: 10px 0;
+      font-size: 0.875rem;
+    }
+
+    .schedule-table td:first-child {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .schedule-table td:last-child {
+      text-align: right;
+      color: var(--text-muted);
+    }
+
+    .address-box {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      padding: 20px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+    }
+
+    .address-title {
+      font-size: 1.1rem;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .address-text {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .landmarks-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .landmark-pill {
+      font-size: 0.775rem;
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .map-embed-wrap {
+      width: 100%;
+      height: 240px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 20px;
+    }
+
+    .map-embed-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background-color: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item.active {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question-btn {
+      width: 100%;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 16px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #0f172a;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .faq-icon-toggle {
+      color: var(--primary);
+      transition: transform 0.25s ease;
+      font-size: 1.2rem;
+    }
+
+    .faq-item.active .faq-icon-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 20px 24px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(9, 44, 53, 0.7);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xl);
+      position: relative;
+      padding: 36px;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--bg-alt);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      margin-bottom: 24px;
+    }
+
+    .modal-header h3 {
+      font-size: 1.6rem;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .modal-header p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #334155;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      font-size: 0.925rem;
+      background-color: #f8fafc;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(13, 124, 138, 0.15);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-submit-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .success-box {
+      display: none;
+      background-color: #ecfdf5;
+      border: 1px solid #6ee7b7;
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #092c35;
+      color: #cbd5e1;
+      padding: 70px 0 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.35rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h4 {
+      font-size: 1.05rem;
+      color: #ffffff;
+      margin-bottom: 18px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #38bdf8;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-link {
+      font-size: 0.875rem;
+      color: #94a3b8;
+      transition: color 0.15s ease;
+    }
+
+    .footer-link:hover {
+      color: #38bdf8;
+      padding-left: 4px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.825rem;
+      color: #64748b;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Floating WhatsApp & Sticky Mobile */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25d366;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+      z-index: 90;
+      font-size: 1.8rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    .mobile-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      padding: 10px 16px;
+      z-index: 95;
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-sticky-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .mobile-nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff;
+      z-index: 99;
+      padding: 24px;
+      flex-direction: column;
+      gap: 16px;
+      border-top: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .mobile-nav-drawer.open {
+      display: flex;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .doctor-card {
+        grid-template-columns: 1fr;
+      }
+      .doctor-photo {
+        min-height: 320px;
+        max-height: 400px;
+      }
+      .services-grid, .why-grid, .reviews-grid, .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .stat-item:nth-child(2) {
+        border-right: none;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 70px;
+      }
+      .top-bar {
+        display: none;
+      }
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-toggle {
+        display: block;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      .section-title {
+        font-size: 1.85rem;
+      }
+      .services-grid, .why-grid, .reviews-grid, .gallery-grid, .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .mobile-sticky-bar {
+        display: block;
+      }
+      .floating-whatsapp {
+        bottom: 74px;
+        right: 16px;
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .modal-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <span>🕒 Open All 7 Days: <strong>10:00 AM - 1:30 PM | 5:00 PM - 9:00 PM</strong></span>
+        </div>
+        <div class="top-bar-item">
+          <span>📍 Birla Circle, Haralur, Bangalore</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919833387738" class="top-bar-item">
+          <span>📞 Call: <strong>+91 98333 87738</strong></span>
+        </a>
+        <a href="https://wa.me/919833387738?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="top-bar-item">
+          <span>💬 WhatsApp Booking</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon-box">✨</div>
+        <div class="brand-text">
+          <h1>SLV Dental</h1>
+          <span>Clinic & Implant Centre</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services" class="nav-link">Treatments</a></li>
+        <li><a href="#doctor" class="nav-link">Meet the Doctor</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#location" class="nav-link">Timings & Location</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button onclick="openBookingModal()" class="btn btn-primary btn-sm">
+          <span>📅 Book Appointment</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+      <li><a href="#services" class="nav-link" onclick="closeMobileMenu()">Treatments</a></li>
+      <li><a href="#doctor" class="nav-link" onclick="closeMobileMenu()">Meet the Doctor</a></li>
+      <li><a href="#why-us" class="nav-link" onclick="closeMobileMenu()">Why Choose Us</a></li>
+      <li><a href="#reviews" class="nav-link" onclick="closeMobileMenu()">Patient Reviews</a></li>
+      <li><a href="#gallery" class="nav-link" onclick="closeMobileMenu()">Clinic Gallery</a></li>
+      <li><a href="#location" class="nav-link" onclick="closeMobileMenu()">Timings & Location</a></li>
+      <li><a href="#faq" class="nav-link" onclick="closeMobileMenu()">FAQs</a></li>
+    </ul>
+    <div style="display: flex; flexDirection: column; gap: 12px; margin-top: 16px;">
+      <button onclick="closeMobileMenu(); openBookingModal()" class="btn btn-primary btn-lg" style="width: 100%;">
+        <span>📅 Book Appointment (₹350)</span>
+      </button>
+      <a href="tel:+919833387738" class="btn btn-secondary btn-lg" style="width: 100%;">
+        <span>📞 Call Clinic (+91 98333 87738)</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-rating-pill">
+            <div class="hero-rating-stars">★★★★★</div>
+            <div class="hero-rating-text">
+              <strong>5.0 / 5.0</strong> Rating <span>(455+ Verified Patient Stories)</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Painless Dental Care with <span class="highlight-text">Honest Diagnosis</span> in Haralur
+          </h1>
+
+          <p class="hero-desc">
+            Led by <strong>Dr. Abhisheak R Naik</strong> (BDS, MDS Oral Medicine & Radiology with 15+ Years Experience). Specializing in painless single-sitting Root Canals, Dental Implants, 15-minute Wisdom Tooth Extractions & Cosmetic Smile Makeovers.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <span class="check">✓</span>
+              <span>Honest Diagnosis (No Unneeded RCTs)</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="check">✓</span>
+              <span>Open All 7 Days (Morning & Evening)</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="check">✓</span>
+              <span>In-House Digital Mini X-Rays</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="check">✓</span>
+              <span>Personal WhatsApp Post-Op Follow-up</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <button onclick="openBookingModal()" class="btn btn-primary btn-lg">
+              <span>📅 Book Appointment</span>
+            </button>
+            <a href="https://wa.me/919833387738?text=Hi%20Dr.%20Abhisheak,%20I%20would%20like%20to%20consult%20regarding%20dental%20treatment%20at%20SLV%20Dental%20Clinic." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <span>💬 Chat on WhatsApp</span>
+            </a>
+            <a href="tel:+919833387738" class="btn btn-outline-dark btn-lg">
+              <span>📞 Call Clinic</span>
+            </a>
+          </div>
+
+          <div class="hero-fee-badge">
+            <span>🛡️ Standard Consultation: ₹350 • No Hidden Booking Fees • 100% Sterilized Operatory</span>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <div class="hero-floating-badge-top">
+            <div class="badge-circle-icon">🏆</div>
+            <div>
+              <strong style="font-size: 0.875rem; color: #0f172a; display: block;">Practo Prime Verified</strong>
+              <span style="font-size: 0.75rem; color: #10b981; font-weight: 700;">100% Patient Recommended</span>
+            </div>
+          </div>
+
+          <div class="hero-main-img-wrap">
+            <img src="assets/clinic_chair.jpg" alt="SLV Dental Clinic Modern Operatory" class="hero-main-img" />
+          </div>
+
+          <div class="hero-floating-doctor">
+            <img src="assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="hero-doc-avatar" />
+            <div class="hero-doc-info">
+              <h4>Dr. Abhisheak R Naik</h4>
+              <p>BDS, MDS - Oral Medicine & Radiology (15+ Yrs Exp)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <div class="container">
+    <div class="stats-strip">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">5.0 ★</div>
+          <div class="stat-label">Patient Rating</div>
+          <div class="stat-sublabel">Practo & Google Verified</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">455+</div>
+          <div class="stat-label">Patient Stories</div>
+          <div class="stat-sublabel">100% Recommended</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">15+</div>
+          <div class="stat-label">Years Experience</div>
+          <div class="stat-sublabel">Clinical Excellence</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">22+</div>
+          <div class="stat-label">Treatments</div>
+          <div class="stat-sublabel">Painless & Advanced</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lead Doctor Profile -->
+  <section id="doctor" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">🎖️ Lead Dental Surgeon</span>
+        <h2 class="section-title">Meet Dr. Abhisheak R Naik</h2>
+        <p class="section-desc">
+          15+ years of clinical experience in Oral Medicine, Digital Radiology, and Cosmetic Surgery, committed to ethical and conservative dental care.
+        </p>
+      </div>
+
+      <div class="doctor-card">
+        <div class="doctor-img-container">
+          <img src="assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="doctor-photo" />
+          <div class="doctor-experience-tag">
+            <span>🏆 15+ Years Overall Clinical Experience</span>
+          </div>
+        </div>
+
+        <div class="doctor-details">
+          <div class="doctor-badge-row">
+            <span class="prime-verified-badge">🛡️ Practo Prime Verified</span>
+            <span class="recommend-badge">★ 100% Recommended (455+ Votes)</span>
+          </div>
+
+          <h3 class="doctor-name">Dr. Abhisheak R Naik</h3>
+          <p class="doctor-degrees">BDS, MDS - Oral Medicine and Radiology</p>
+
+          <p class="doctor-bio">
+            Dr. Abhisheak R Naik is a highly trusted dental surgeon and oral radiology specialist with over 15 years of clinical excellence. Renowned across Haralur and HSR Layout for his conservative diagnostic philosophy—never recommending an unnecessary root canal or extraction when conservative care works—and his attentive post-procedure WhatsApp follow-ups.
+          </p>
+
+          <div class="doctor-pillars">
+            <div class="pillar-box">
+              <h5>✅ Honest Diagnostics First</h5>
+              <p>No unnecessary procedures. If sensitivity paste or preventive treatment works, we tell you openly.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>📱 Post-Op WhatsApp Care</h5>
+              <p>Personal check-ins after every extraction or root canal to ensure quick healing without stress.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>🤝 Gentle & Empathetic</h5>
+              <p>Detailed explanations on digital screens so you feel calm, informed, and in control.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>🔬 Precision Oral Radiology</h5>
+              <p>Specialized MDS radiology training ensures pinpoint diagnosis of decay and bone health.</p>
+            </div>
+          </div>
+
+          <div class="doctor-cta-row">
+            <button onclick="openBookingModal('General Consultation & Checkup')" class="btn btn-primary">
+              <span>📅 Consult Dr. Abhisheak (₹350)</span>
+            </button>
+            <a href="https://www.practo.com/bangalore/clinic/slv-dental-clinic-implant-centre-harlur" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-sm">
+              <span>View Practo Profile & Stories →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments & Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">✨ Comprehensive Dental Treatments</span>
+        <h2 class="section-title">World-Class Dental Solutions Under One Roof</h2>
+        <p class="section-desc">
+          From single-sitting painless root canals to permanent titanium dental implants and cosmetic smile design, experience gentle, tech-driven dentistry in Haralur.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="services-tabs" id="serviceTabs">
+        <button class="tab-btn active" onclick="filterServices('All', this)">All</button>
+        <button class="tab-btn" onclick="filterServices('Restorative & RCT', this)">Restorative & RCT</button>
+        <button class="tab-btn" onclick="filterServices('Dental Implants', this)">Dental Implants</button>
+        <button class="tab-btn" onclick="filterServices('Cosmetic Dentistry', this)">Cosmetic Dentistry</button>
+        <button class="tab-btn" onclick="filterServices('Oral Surgery', this)">Oral Surgery</button>
+        <button class="tab-btn" onclick="filterServices('Gums & Preventive', this)">Gums & Preventive</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Service 1: RCT -->
+        <div class="service-card" data-category="Restorative & RCT">
+          <div class="service-header">
+            <div class="service-icon-box">🦷</div>
+            <span class="service-tag">Popular & Painless</span>
+          </div>
+          <h3 class="service-title">Root Canal Treatment (RCT)</h3>
+          <p class="service-desc">Single-sitting and multi-visit painless root canal therapy using rotary endodontics and digital apex locators.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Relieves severe acute toothache immediately</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Preserves natural tooth structure & roots</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>High-grade biocompatible crown restorations</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 45 - 60 mins / sitting</div>
+            <button onclick="openBookingModal('Root Canal Treatment (RCT)')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 2: Implants -->
+        <div class="service-card" data-category="Dental Implants">
+          <div class="service-header">
+            <div class="service-icon-box">🔩</div>
+            <span class="service-tag">Permanent Solution</span>
+          </div>
+          <h3 class="service-title">Dental Implants & Prosthetics</h3>
+          <p class="service-desc">Premium titanium & zirconia dental implants that restore natural bite strength, chewing comfort, and smile aesthetics.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Lifetime durable replacement for missing teeth</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>No damage to adjacent healthy teeth</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Natural bone preservation and facial support</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ Surgical & Restorative</div>
+            <button onclick="openBookingModal('Dental Implants & Prosthetics')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 3: Wisdom Tooth -->
+        <div class="service-card" data-category="Oral Surgery">
+          <div class="service-header">
+            <div class="service-icon-box">⚡</div>
+            <span class="service-tag">Quick 15-Min Procedure</span>
+          </div>
+          <h3 class="service-title">Wisdom Tooth Extraction</h3>
+          <p class="service-desc">Gentle, precision surgical removal of impacted or decayed wisdom teeth with minimal trauma and swift recovery.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Completed in approx. 15 mins with anesthesia</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Instant relief from jaw throbbing & swelling</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Personal WhatsApp daily post-op follow-up</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 15 - 30 mins</div>
+            <button onclick="openBookingModal('Wisdom Tooth Extraction')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 4: Cosmetic Smile -->
+        <div class="service-card" data-category="Cosmetic Dentistry">
+          <div class="service-header">
+            <div class="service-icon-box">💎</div>
+            <span class="service-tag">Aesthetic Excellence</span>
+          </div>
+          <h3 class="service-title">Cosmetic & Smile Makeover</h3>
+          <p class="service-desc">Custom composite bonding, porcelain veneers, diastema (gap) closures, and smile enhancements.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Corrects chipped, discolored, or uneven teeth</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Natural translucency and lifelike appearance</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Long-lasting stain resistant finish</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 1 - 2 visits</div>
+            <button onclick="openBookingModal('Cosmetic & Smile Makeover')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 5: Teeth Cleaning -->
+        <div class="service-card" data-category="Gums & Preventive">
+          <div class="service-header">
+            <div class="service-icon-box">✨</div>
+            <span class="service-tag">Routine Preventive</span>
+          </div>
+          <h3 class="service-title">Teeth Cleaning & Polishing</h3>
+          <p class="service-desc">Ultrasonic tartar removal, plaque debridement, and enamel stain polishing for sparkling breath and gum health.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Eliminates calculus and coffee/tea stains</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Stops gum bleeding and bad breath (halitosis)</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Gentle ultrasonic tips safe for dental enamel</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 30 - 45 mins</div>
+            <button onclick="openBookingModal('Teeth Cleaning & Polishing')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 6: Invisible Fillings -->
+        <div class="service-card" data-category="Restorative & RCT">
+          <div class="service-header">
+            <div class="service-icon-box">🛡️</div>
+            <span class="service-tag">Invisible Repair</span>
+          </div>
+          <h3 class="service-title">Tooth-Coloured Fillings</h3>
+          <p class="service-desc">Nano-hybrid composite resins seamlessly matched to your enamel shade for cavity restorations.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Completely invisible and blends with natural tooth</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>100% Mercury-free, modern biocompatible materials</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Completed in a single comfortable visit</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 20 - 30 mins</div>
+            <button onclick="openBookingModal('Tooth-Coloured Fillings')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 7: Laser Gums -->
+        <div class="service-card" data-category="Gums & Preventive">
+          <div class="service-header">
+            <div class="service-icon-box">⚡</div>
+            <span class="service-tag">Laser Therapy</span>
+          </div>
+          <h3 class="service-title">Laser Gum & Bleeding Gums Care</h3>
+          <p class="service-desc">Minimally invasive laser therapy for gingivitis, bleeding gums, gum recession, and periodontitis.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>No sutures or scalpels needed in many cases</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Fast healing with minimal to no post-op bleeding</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Eliminates deep bacterial pockets under gums</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 30 - 45 mins</div>
+            <button onclick="openBookingModal('Laser Gum & Bleeding Gums Care')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 8: TMJ Nightguards -->
+        <div class="service-card" data-category="Oral Surgery">
+          <div class="service-header">
+            <div class="service-icon-box">🌙</div>
+            <span class="service-tag">Specialized Care</span>
+          </div>
+          <h3 class="service-title">TMJ Therapy & Bruxism Night Guards</h3>
+          <p class="service-desc">Custom-fitted occlusal night guards to prevent teeth grinding (bruxism), relieve jaw soreness, and treat TMJ pain.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Protects teeth from severe wear and enamel chipping</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Relieves morning jaw stiffness & tension headaches</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Comfortable medical-grade transparent splint</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ Custom Impression</div>
+            <button onclick="openBookingModal('TMJ Therapy & Bruxism Night Guards')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+
+        <!-- Service 9: Digital Mini X-Rays -->
+        <div class="service-card" data-category="Restorative & RCT">
+          <div class="service-header">
+            <div class="service-icon-box">🔬</div>
+            <span class="service-tag">In-House Diagnostics</span>
+          </div>
+          <h3 class="service-title">Digital Oral Radiology & Mini X-Rays</h3>
+          <p class="service-desc">Instant chairside digital radiography with ultra-low radiation for rapid, high-definition bone and tooth analysis.</p>
+          <ul class="service-benefits-list">
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Instant on-screen visualization shown to patient</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Up to 80% lower radiation than traditional film</span></li>
+            <li class="service-benefit-item"><span class="bullet">✓</span><span>Pinpoints hidden interdental decay & bone loss</span></li>
+          </ul>
+          <div class="service-footer">
+            <div class="service-duration">⏱️ 2 mins</div>
+            <button onclick="openBookingModal('Digital Oral Radiology')" class="service-action-link">Book Slot →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-us" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">🛡️ The SLV Dental Difference</span>
+        <h2 class="section-title">Why Patients in Haralur Trust Us</h2>
+        <p class="section-desc">
+          We believe dental visits should be transparent, gentle, and strictly focused on what is genuinely best for your natural teeth.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon-box">💡</div>
+          <h3 class="why-title">Honest & Conservative Diagnosis</h3>
+          <p class="why-desc">We never recommend invasive procedures like root canals or extractions when a conservative treatment or preventive remedy works.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-box">🕒</div>
+          <h3 class="why-title">Open All 7 Days (Mon - Sun)</h3>
+          <p class="why-desc">Flexible morning (10 AM - 1:30 PM) and evening (5 PM - 9 PM) OPD slots suited for working professionals and families.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-box">🔬</div>
+          <h3 class="why-title">In-House Digital Mini X-Rays</h3>
+          <p class="why-desc">Chairside instant digital radiography for accurate diagnosis on large screens with ultra-low radiation.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-box">⚡</div>
+          <h3 class="why-title">15-Minute Gentle Oral Surgery</h3>
+          <p class="why-desc">Specialized painless extraction and rotary endodontics techniques designed to eliminate patient anxiety.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-box">📱</div>
+          <h3 class="why-title">Proactive WhatsApp Follow-Up</h3>
+          <p class="why-desc">We don't leave you after the chair; Dr. Naik personally checks in on your recovery status and answers queries.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-box">🛡️</div>
+          <h3 class="why-title">100% Autoclave Sterilization</h3>
+          <p class="why-desc">Hospital-grade multi-tier sterilization protocols and single-use disposable kits for absolute patient safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Reviews & Stories -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">💬 Verified Patient Feedback</span>
+        <h2 class="section-title">Real Patient Stories & Google Reviews</h2>
+        <p class="section-desc">
+          Discover why 455+ patients have rated Dr. Abhisheak R Naik and SLV Dental Clinic with 5.0 stars and a 100% recommendation score on Practo and Google.
+        </p>
+      </div>
+
+      <div class="reviews-filter-bar">
+        <div class="reviews-score-badge">
+          <div class="score-num">
+            <span>5.0</span>
+            <span style="color: #f59e0b;">★</span>
+          </div>
+          <div>
+            <strong style="display: block; font-size: 0.9rem; color: #0f172a;">455+ Patient Stories & Reviews</strong>
+            <span style="font-size: 0.775rem; color: #15803d; font-weight: 700;">100% Recommendation Rate</span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="reviewTabs">
+          <button class="tab-btn active" onclick="filterReviews('All', this)">All Stories</button>
+          <button class="tab-btn" onclick="filterReviews('RCT', this)">Root Canal</button>
+          <button class="tab-btn" onclick="filterReviews('Wisdom', this)">Wisdom Tooth</button>
+          <button class="tab-btn" onclick="filterReviews('Honest', this)">Honest Diagnosis</button>
+          <button class="tab-btn" onclick="filterReviews('Cosmetic', this)">Cosmetic</button>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <!-- Story 1 -->
+        <div class="review-card" data-tags="RCT">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Practo Verified Story</span>
+          </div>
+          <span class="review-tag">Detailed Diagnosis & Empathy</span>
+          <blockquote class="review-quote-highlight">
+            "Dr. Abhishek did a detailed checkup and scan of the aching jaw... Showed us on the scan the exact area affected."
+          </blockquote>
+          <p class="review-body">
+            My partner had a bad toothache and we chose to check up with Dr. Abhishek at SLV Dental, Harlur. Dr. Abhishek did a detailed checkup and scan of the aching jaw. He showed us on the screen the exact area affected and gave different possible options. Another friend got an infection in her tooth and had her RCT completed here and is doing fine. Dr. Abhishek is an empathetic, extremely friendly doctor!
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Suraj K.</div>
+              <div class="reviewer-treatment">RCT - Root Canal Treatment & Teeth Cleaning</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="review-card" data-tags="Wisdom">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Practo / Google Review</span>
+          </div>
+          <span class="review-tag">15-Min Painless Extraction</span>
+          <blockquote class="review-quote-highlight">
+            "Surgeon performed the extraction in a 15-minute process to be exact including anesthesia. Daily follow-ups on phone!"
+          </blockquote>
+          <p class="review-body">
+            Woke up one fine morning with excruciating pain throbbing through my right upper jaw. I checked with our RWA WhatsApp group and Dr. Naik was highly recommended. Booked the appointment the same evening. Dr. listened patiently, X-ray was taken, and on the appointment date, the extraction was done in a 15-minute process to be exact! Post care procedures were clearly explained and Dr. followed up daily on the phone.
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Vikram N.</div>
+              <div class="reviewer-treatment">Wisdom Tooth Extraction</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="review-card" data-tags="Honest">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Practo Verified Story</span>
+          </div>
+          <span class="review-tag">Honest & Trustworthy</span>
+          <blockquote class="review-quote-highlight">
+            "Other clinics told me it was a cavity needing RCT. Dr. Abhisheak suggested anti-sensitivity toothpaste and it worked perfectly!"
+          </blockquote>
+          <p class="review-body">
+            Dr. Abhisheak's diagnosis is excellent and he has a genuine intent of suggesting the right treatment. I was suffering from minor sensitivity and Dr. Abhisheak suggested to not go for any RCT at this stage and try an anti-sensitivity toothpaste — and it worked perfectly! Other popular places told me it needed RCT and capping. A big factor — trust — is something you will find with Dr. Abhisheak.
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Ananya M.</div>
+              <div class="reviewer-treatment">Tooth Sensitivity & Honest Diagnosis</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="review-card" data-tags="Cosmetic">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Google Reviews</span>
+          </div>
+          <span class="review-tag">Smile Makeover & Cordial Care</span>
+          <blockquote class="review-quote-highlight">
+            "Dr. Abhishek is very professional, explained the cause and diagnosis in detail, and always followed up on my progress."
+          </blockquote>
+          <p class="review-body">
+            It's been a very pleasant experience throughout my treatment and I would highly recommend visiting SLV Dental Clinic for any dental problems. Dr. Abhishek is very professional, explained the cause and diagnosis in details, and allowed me to ask all my queries patiently. The friendliness and cordial atmosphere in the clinic is remarkable.
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Meera R.</div>
+              <div class="reviewer-treatment">Cosmetic & Aesthetic Dentistry</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+
+        <!-- Story 5 -->
+        <div class="review-card" data-tags="Cleaning">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Practo Verified Story</span>
+          </div>
+          <span class="review-tag">Gentle & Fast Relief</span>
+          <blockquote class="review-quote-highlight">
+            "Clean clinic, punctual timing, and absolutely zero pain during scaling and composite filling."
+          </blockquote>
+          <p class="review-body">
+            Very hygienic and well-maintained clinic right at Birla Circle. Dr. Naik is extremely gentle and transparent about the process. Consultation fee of ₹350 is very reasonable for the high quality of care provided. Highly recommend for families in Haralur and HSR.
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Rahul Verma</div>
+              <div class="reviewer-treatment">Dental Scaling & Tooth Filling</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+
+        <!-- Story 6 -->
+        <div class="review-card" data-tags="TMJ">
+          <div class="review-header">
+            <div class="review-stars">★★★★★</div>
+            <span class="review-source-pill">Google Reviews</span>
+          </div>
+          <span class="review-tag">TMJ Soreness Resolved</span>
+          <blockquote class="review-quote-highlight">
+            "Explained the root cause of my morning headaches and jaw pain. The night guard fit like a glove."
+          </blockquote>
+          <p class="review-body">
+            I had unexplained jaw pain and morning headaches for months. Dr. Abhisheak identified nocturnal teeth grinding (bruxism) and custom-fabricated a night splint. Within two weeks the pain completely disappeared. Truly grateful for his accurate clinical diagnosis!
+          </p>
+          <div class="review-footer">
+            <div>
+              <div class="reviewer-name">Deepa S.</div>
+              <div class="reviewer-treatment">Night Guard for Teeth Grinding</div>
+            </div>
+            <div style="color: #10b981; font-size: 0.75rem; font-weight: 700;">✓ Verified</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="https://www.practo.com/bangalore/clinic/slv-dental-clinic-implant-centre-harlur" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+          <span>Read all 455+ Stories on Practo ↗</span>
+        </a>
+        <a href="https://share.google/6N8NLQaNhfyj9xOPF" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <span>View Photos & Reviews on Google ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinic Gallery -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">🖼️ Clinic Ambiance & Technology</span>
+        <h2 class="section-title">Inside SLV Dental Clinic</h2>
+        <p class="section-desc">
+          Take a look at our hygienic, modern clinic operatory, diagnostic setup, and welcoming environment located at Birla Circle, Haralur.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card" onclick="openLightbox('assets/dr_abhisheak_naik.jpg', 'Dr. Abhisheak R Naik', 'Chief Dental Surgeon & Oral Radiologist')">
+          <img src="assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h4>Dr. Abhisheak R Naik</h4>
+            <p>Chief Dental Surgeon & Oral Radiologist</p>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openLightbox('assets/clinic_chair.jpg', 'Modern Operatory & Ergonomic Dental Chair', 'Advanced digital instruments & sanitised treatment zone')">
+          <img src="assets/clinic_chair.jpg" alt="Operatory Chair" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h4>Modern Operatory & Dental Chair</h4>
+            <p>Advanced digital instruments & sanitised treatment zone</p>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openLightbox('assets/clinic_room.jpg', 'Consultation & Diagnostics Room', 'Equipped with digital radiography and patient viewing monitors')">
+          <img src="assets/clinic_room.jpg" alt="Consultation Room" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h4>Consultation & Diagnostics Room</h4>
+            <p>Digital radiography & patient viewing monitors</p>
+          </div>
+        </div>
+
+        <div class="gallery-card" onclick="openLightbox('assets/clinic_board.jpg', 'Clinic Facility & Birla Circle Landmark', 'Easy to locate above Ramdev Medicals on Haralur Main Road')">
+          <img src="assets/clinic_board.jpg" alt="Clinic Entrance Board" class="gallery-img" />
+          <div class="gallery-overlay">
+            <h4>Clinic Facility & Landmark</h4>
+            <p>Birla Circle, above Ramdev Medicals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timings & Location -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">🕒 Timings & Clinic Location</span>
+        <h2 class="section-title">Visit Us in Haralur, Bangalore</h2>
+        <p class="section-desc">
+          Conveniently located at Birla Circle on Haralur Main Road with morning and evening OPD sessions all 7 days a week.
+        </p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Schedule Card -->
+        <div class="schedule-card">
+          <div class="schedule-header">
+            <h3 style="font-size: 1.4rem; color: #0f172a;">Clinic Working Hours</h3>
+            <span class="open-all-days-badge">✓ Open All 7 Days</span>
+          </div>
+
+          <div class="schedule-sessions-row">
+            <div class="session-box">
+              <div style="color: #d97706; margin-bottom: 6px; font-weight: 700;">☀️ Morning Session</div>
+              <p>10:00 AM – 01:30 PM</p>
+            </div>
+            <div class="session-box">
+              <div style="color: #0284c7; margin-bottom: 6px; font-weight: 700;">🌙 Evening Session</div>
+              <p>05:00 PM – 09:00 PM</p>
+            </div>
+          </div>
+
+          <table class="schedule-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td><span style="color: #0d7c8a; font-weight: 600;">10:00 AM - 1:30 PM</span> | <span style="color: #0284c7; font-weight: 600;">5:00 PM - 9:00 PM</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <button onclick="openBookingModal()" class="btn btn-primary" style="flex: 1 1 auto;">
+              <span>📅 Reserve a Slot</span>
+            </button>
+            <a href="https://wa.me/919833387738?text=Hi%20SLV%20Dental,%20is%20a%20slot%20available%20today?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <span>💬 Today's Availability</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="location-card">
+          <h3 style="font-size: 1.4rem; color: #0f172a; margin-bottom: 18px;">Find Our Clinic</h3>
+
+          <div class="address-box">
+            <h4 class="address-title">SLV Dental Clinic & Implant Centre</h4>
+            <p class="address-text">
+              #99/4, 1st Floor, Birla Circle, Above Ramdev Medicals, Haralur Main Road, Bangalore — 560102
+            </p>
+            <div class="landmarks-list">
+              <span class="landmark-pill">📍 Directly Above Ramdev Medicals</span>
+              <span class="landmark-pill">📍 At Birla Circle</span>
+              <span class="landmark-pill">📍 Opposite Passion Apartment</span>
+            </div>
+          </div>
+
+          <div class="map-embed-wrap">
+            <iframe
+              title="SLV Dental Clinic Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.28821558231!2d77.65453867598858!3d12.894250687413645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b6932a9341%3A0xb695eef9a8d9b158!2sSLV%20Dental%20Clinic%20And%20Implant%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://www.google.com/maps/dir//12.894250652369,77.657113568645" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="flex: 1 1 auto;">
+              <span>🧭 Get Directions on Google Maps</span>
+            </a>
+            <a href="tel:+919833387738" class="btn btn-outline-dark">
+              <span>📞 Call Clinic</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">❓ Frequently Asked Questions</span>
+        <h2 class="section-title">Common Questions Answered</h2>
+        <p class="section-desc">
+          Have questions about your upcoming dental visit? Here are answers to the most common queries.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>Is Root Canal Treatment (RCT) painful at SLV Dental?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not at all. With modern local anesthetics, rotary endodontic equipment, and digital apex locators, RCT is virtually painless and provides immediate relief from toothache. Most patients describe it as comfortable as getting a routine filling.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>Is the clinic open on weekends (Saturdays & Sundays)?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! SLV Dental Clinic & Implant Centre is open all 7 days a week, including both Saturday and Sunday, from 10:00 AM to 01:30 PM (Morning) and 05:00 PM to 09:00 PM (Evening).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>How much is the initial consultation fee?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>The standard doctor consultation fee is ₹350. There are no hidden booking charges or surprise fees.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>How long does a wisdom tooth extraction take?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>In most cases, the actual extraction takes approximately 15 minutes, including the administration of local anesthesia. Dr. Naik provides written post-care instructions and follow-ups to ensure a smooth recovery.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>Do I need to book an appointment in advance?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>While walk-ins are welcome, we strongly recommend booking an appointment in advance via our website form, WhatsApp, or phone call to avoid waiting time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" onclick="toggleFAQ(this)">
+            <span>Where is the clinic located in Haralur?</span>
+            <span class="faq-icon-toggle">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>We are located at #99/4, 1st Floor, Birla Circle, Haralur Main Road, Bangalore (Opposite Passion Apartment, directly Above Ramdev Medicals).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div class="brand-icon-box" style="width: 38px; height: 38px; font-size: 1.1rem;">✨</div>
+            <h3 style="margin: 0; font-size: 1.25rem; color: #fff;">SLV Dental Clinic & Implant Centre</h3>
+          </div>
+          <p>
+            Premier multi-speciality dental clinic and implant center in Haralur, Bangalore. Led by Dr. Abhisheak R Naik (BDS, MDS). Specializing in painless root canals, implants, cosmetic dentistry, and gentle oral surgery.
+          </p>
+          <div style="color: #f59e0b; font-size: 0.875rem; font-weight: 700;">
+            ★ 5.0 / 5.0 Rating (455+ Verified Patient Stories)
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Dental Treatments</a></li>
+            <li><a href="#doctor" class="footer-link">Meet Dr. Abhisheak</a></li>
+            <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+            <li><a href="#reviews" class="footer-link">Patient Reviews</a></li>
+            <li><a href="#gallery" class="footer-link">Clinic Gallery</a></li>
+            <li><a href="#location" class="footer-link">Timings & Directions</a></li>
+            <li><a href="#faq" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Key Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Root Canal Treatment (RCT)</a></li>
+            <li><a href="#services" class="footer-link">Dental Implants & Crowns</a></li>
+            <li><a href="#services" class="footer-link">Wisdom Tooth Extraction</a></li>
+            <li><a href="#services" class="footer-link">Cosmetic Smile Makeover</a></li>
+            <li><a href="#services" class="footer-link">Teeth Cleaning & Scaling</a></li>
+            <li><a href="#services" class="footer-link">Laser Gum Therapy</a></li>
+            <li><a href="#services" class="footer-link">TMJ Night Guards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Clinic Contact</h4>
+          <div class="footer-contact-item">
+            <span>📍 #99/4, 1st Floor, Birla Circle, Haralur Main Road, Bangalore — 560102<br/><em style="color: #94a3b8; font-size: 0.8rem;">(Above Ramdev Medicals / Opp Passion Apt)</em></span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞 <a href="tel:+919833387738" style="color: #fff; font-weight: 600;">+91 98333 87738</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️ info@slvdentalclinic.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>🕒 Mon - Sun: 10:00 AM - 1:30 PM & 5:00 PM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear"></span> SLV Dental Clinic & Implant Centre. All rights reserved. Haralur, Bangalore.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <span>Consultation: ₹350</span>
+          <span>•</span>
+          <span>Dr. Abhisheak R Naik (BDS, MDS)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay" id="bookingModal" onclick="closeBookingModal()">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Close modal">✕</button>
+
+      <div id="bookingFormContent">
+        <div class="modal-header">
+          <span class="prime-verified-badge" style="margin-bottom: 8px;">🛡️ Doctor Consultation: ₹350</span>
+          <h3>Book a Dental Appointment</h3>
+          <p>Reserve a consultation with Dr. Abhisheak R Naik at our Haralur clinic.</p>
+        </div>
+
+        <form onsubmit="handleBookingSubmit(event)" class="booking-form">
+          <div class="form-group">
+            <label>Treatment / Reason for Visit *</label>
+            <select class="form-select" id="formTreatment" required>
+              <option value="General Consultation & Checkup">General Consultation & Checkup (₹350)</option>
+              <option value="Acute Toothache / Dental Emergency">Acute Toothache / Dental Emergency</option>
+              <option value="Root Canal Treatment (RCT)">Root Canal Treatment (RCT)</option>
+              <option value="Dental Implants & Prosthetics">Dental Implants & Prosthetics</option>
+              <option value="Wisdom Tooth Extraction">Wisdom Tooth Extraction (15 Mins)</option>
+              <option value="Cosmetic & Smile Makeover">Cosmetic & Smile Makeover</option>
+              <option value="Teeth Cleaning & Polishing">Teeth Cleaning & Polishing</option>
+              <option value="Tooth-Coloured Fillings">Tooth-Coloured Fillings</option>
+              <option value="Laser Gum & Bleeding Gums Care">Laser Gum & Bleeding Gums Care</option>
+              <option value="TMJ Therapy & Bruxism Night Guards">TMJ Therapy & Bruxism Night Guards</option>
+              <option value="Digital Oral Radiology">Digital Oral Radiology & Mini X-Rays</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" class="form-input" id="formName" placeholder="e.g. Rahul Sharma" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" class="form-input" id="formPhone" placeholder="10-digit mobile number" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Date *</label>
+              <input type="date" class="form-input" id="formDate" required />
+            </div>
+            <div class="form-group">
+              <label>Preferred OPD Slot *</label>
+              <select class="form-select" id="formSlot" required>
+                <option value="Morning (10:00 AM - 01:30 PM)">Morning: 10:00 AM – 01:30 PM</option>
+                <option value="Evening (05:00 PM - 09:00 PM)">Evening: 05:00 PM – 09:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Any symptoms or details (Optional)</label>
+            <textarea class="form-textarea" id="formNotes" rows="2" placeholder="Describe symptoms (e.g. sensitivity, chewing pain)..."></textarea>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>📅 Confirm Appointment Request</span>
+            </button>
+            <button type="button" onclick="sendDirectWhatsApp()" class="btn btn-whatsapp" style="width: 100%;">
+              <span>💬 Book Instantly via WhatsApp</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Screen -->
+      <div class="success-box" id="bookingSuccessBox">
+        <div style="font-size: 3rem;">✅</div>
+        <h3 style="font-size: 1.4rem; color: #0f172a;">Appointment Request Received!</h3>
+        <p style="color: #475569; font-size: 0.95rem;" id="successMsg">
+          Thank you! Our clinic team will confirm your slot shortly.
+        </p>
+        <div style="width: 100%; margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
+          <button onclick="sendDirectWhatsApp()" class="btn btn-whatsapp" style="width: 100%;">
+            <span>💬 Send Details on WhatsApp for Instant Confirmation</span>
+          </button>
+          <button onclick="closeBookingModal()" class="btn btn-outline-dark" style="width: 100%;">
+            <span>Done</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+    <div class="modal-card" style="max-width: 800px; padding: 16px; background-color: #092c35;" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" style="top: 12px; right: 12px; background-color: rgba(255,255,255,0.2); color: #fff;" onclick="closeLightbox()">✕</button>
+      <img id="lightboxImg" src="" alt="Enlarged preview" style="width: 100%; max-height: 70vh; object-fit: contain; border-radius: 12px;" />
+      <div style="padding: 16px 8px 4px 8px; color: #ffffff;">
+        <h3 id="lightboxTitle" style="font-size: 1.25rem; color: #ffffff; margin-bottom: 4px;"></h3>
+        <p id="lightboxSubtitle" style="color: #94a3b8; font-size: 0.9rem;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp & Mobile Bar -->
+  <a href="https://wa.me/919833387738?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="Chat on WhatsApp">
+    💬
+  </a>
+
+  <div class="mobile-sticky-bar">
+    <div class="mobile-sticky-inner">
+      <a href="tel:+919833387738" class="btn btn-secondary btn-sm" style="width: 100%;">
+        <span>📞 Call Now</span>
+      </a>
+      <button onclick="openBookingModal()" class="btn btn-primary btn-sm" style="width: 100%;">
+        <span>📅 Book (₹350)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Standalone Vanilla JS (Zero Module / Zero Server / Immediate Execution) -->
+  <script>
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Set min date for datepicker
+    var todayStr = new Date().toISOString().split('T')[0];
+    var dateInput = document.getElementById('formDate');
+    if (dateInput) {
+      dateInput.min = todayStr;
+      dateInput.value = todayStr;
+    }
+
+    // Sticky Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > 30) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Menu
+    var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    var mobileNavDrawer = document.getElementById('mobileNavDrawer');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        mobileNavDrawer.classList.toggle('open');
+      });
+    }
+
+    function closeMobileMenu() {
+      if (mobileNavDrawer) mobileNavDrawer.classList.remove('open');
+    }
+
+    // Modal Management
+    function openBookingModal(treatmentName) {
+      var modal = document.getElementById('bookingModal');
+      var select = document.getElementById('formTreatment');
+      if (treatmentName && select) {
+        select.value = treatmentName;
+      }
+      document.getElementById('bookingFormContent').style.display = 'block';
+      document.getElementById('bookingSuccessBox').style.display = 'none';
+      if (modal) modal.classList.add('open');
+    }
+
+    function closeBookingModal() {
+      var modal = document.getElementById('bookingModal');
+      if (modal) modal.classList.remove('open');
+    }
+
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      var name = document.getElementById('formName').value;
+      var treatment = document.getElementById('formTreatment').value;
+      var date = document.getElementById('formDate').value;
+      var slot = document.getElementById('formSlot').value;
+
+      document.getElementById('successMsg').innerHTML = 
+        "Thank you, <strong>" + name + "</strong>! Our clinic team will confirm your slot for <strong>" + treatment + "</strong> on <strong>" + date + "</strong> (" + slot + ").";
+
+      document.getElementById('bookingFormContent').style.display = 'none';
+      document.getElementById('bookingSuccessBox').style.display = 'flex';
+    }
+
+    function sendDirectWhatsApp() {
+      var name = document.getElementById('formName').value || 'Patient';
+      var phone = document.getElementById('formPhone').value || 'Not provided';
+      var treatment = document.getElementById('formTreatment').value || 'General Consultation';
+      var date = document.getElementById('formDate').value || 'Earliest';
+      var slot = document.getElementById('formSlot').value || 'Morning';
+      var notes = document.getElementById('formNotes').value;
+
+      var text = "Hello SLV Dental Clinic,\n\nI would like to book an appointment:\n• Name: " + name + 
+        "\n• Phone: " + phone + 
+        "\n• Treatment: " + treatment + 
+        "\n• Date: " + date + 
+        "\n• Slot: " + slot + 
+        (notes ? "\n• Notes: " + notes : "");
+
+      window.open("https://wa.me/919833387738?text=" + encodeURIComponent(text), "_blank");
+    }
+
+    // Services Filter Tabs
+    function filterServices(category, btn) {
+      var buttons = document.querySelectorAll('#serviceTabs .tab-btn');
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+
+      var cards = document.querySelectorAll('#servicesGrid .service-card');
+      cards.forEach(function(card) {
+        if (category === 'All' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Reviews Filter Tabs
+    function filterReviews(tag, btn) {
+      var buttons = document.querySelectorAll('#reviewTabs .tab-btn');
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      if (btn) btn.classList.add('active');
+
+      var cards = document.querySelectorAll('#reviewsGrid .review-card');
+      cards.forEach(function(card) {
+        if (tag === 'All' || (card.getAttribute('data-tags') && card.getAttribute('data-tags').indexOf(tag) !== -1)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // FAQ Toggle
+    function toggleFAQ(button) {
+      var item = button.parentElement;
+      item.classList.toggle('active');
+    }
+
+    // Lightbox
+    function openLightbox(src, title, subtitle) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxTitle').textContent = title;
+      document.getElementById('lightboxSubtitle').textContent = subtitle;
+      document.getElementById('lightboxModal').classList.add('open');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('open');
+    }
+  </script>
+</body>
+</html>
