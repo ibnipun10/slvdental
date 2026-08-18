@@ -8,23 +8,18 @@ export default function Navbar({ onOpenBooking }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 30) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Services', href: '#services' },
-    { name: 'Meet the Doctor', href: '#doctor' },
+    { name: 'Treatments', href: '#services' },
+    { name: 'Dr. Abhisheak', href: '#doctor' },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Timings & Location', href: '#location' },
+    { name: 'Location & Hours', href: '#location' },
     { name: 'FAQ', href: '#faq' }
   ];
 
@@ -39,15 +34,15 @@ export default function Navbar({ onOpenBooking }) {
           {/* Brand Logo */}
           <a href="#" className="brand-logo">
             <div className="brand-icon-box">
-              <Sparkles size={22} />
+              <Sparkles size={20} />
             </div>
             <div className="brand-text">
-              <h1>SLV Dental</h1>
-              <span>Clinic & Implant Centre</span>
+              <span className="brand-name">SLV Dental</span>
+              <span className="brand-sub">Clinic & Implant Centre</span>
             </div>
           </a>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Links */}
           <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
@@ -62,73 +57,76 @@ export default function Navbar({ onOpenBooking }) {
           <div className="nav-actions">
             <a 
               href={`tel:${CLINIC_INFO.contact.phonePrimary}`} 
-              className="btn btn-outline-dark btn-sm"
-              style={{ display: 'none' }}
+              className="btn btn-outline-dark btn-sm desktop-only-btn"
             >
-              <Phone size={16} />
-              <span>{CLINIC_INFO.contact.phoneDisplay}</span>
+              <Phone size={15} />
+              <span>Call Clinic</span>
             </a>
 
             <button 
               onClick={() => onOpenBooking()} 
               className="btn btn-primary btn-sm"
             >
-              <Calendar size={16} />
-              <span>Book Appointment</span>
+              <Calendar size={15} />
+              <span>Book ₹350</span>
             </button>
 
-            {/* Mobile menu toggle */}
+            {/* Mobile Menu Toggle */}
             <button 
               className="mobile-menu-toggle" 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle Navigation Menu"
+              aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Nav Drawer */}
       {mobileMenuOpen && (
-        <div className="mobile-nav-drawer">
-          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a 
-                  href={link.href} 
-                  className="nav-link" 
-                  style={{ fontSize: '1.1rem', display: 'block', padding: '8px 0' }}
-                  onClick={handleLinkClick}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '16px' }}>
-            <button 
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenBooking();
-              }} 
-              className="btn btn-primary btn-lg"
-              style={{ width: '100%' }}
-            >
-              <Calendar size={18} />
-              <span>Book Appointment (₹350)</span>
-            </button>
-            <a 
-              href={`tel:${CLINIC_INFO.contact.phonePrimary}`} 
-              className="btn btn-secondary btn-lg"
-              style={{ width: '100%' }}
-            >
-              <Phone size={18} />
-              <span>Call Clinic ({CLINIC_INFO.contact.phoneDisplay})</span>
-            </a>
+        <div className="mobile-nav-drawer" onClick={handleLinkClick}>
+          <div className="mobile-drawer-content" onClick={(e) => e.stopPropagation()}>
+            <ul className="mobile-nav-list">
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <a 
+                    href={link.href} 
+                    className="mobile-nav-link" 
+                    onClick={handleLinkClick}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mobile-drawer-actions">
+              <button 
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenBooking();
+                }} 
+                className="btn btn-primary btn-lg"
+                style={{ width: '100%' }}
+              >
+                <Calendar size={18} />
+                <span>Book Appointment (₹350)</span>
+              </button>
+
+              <a 
+                href={`tel:${CLINIC_INFO.contact.phonePrimary}`} 
+                className="btn btn-outline-dark btn-lg"
+                style={{ width: '100%' }}
+              >
+                <Phone size={18} />
+                <span>Call {CLINIC_INFO.contact.phoneDisplay}</span>
+              </a>
+            </div>
           </div>
         </div>
       )}
     </>
   );
 }
+

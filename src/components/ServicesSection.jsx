@@ -4,105 +4,77 @@ import {
   ShieldCheck, 
   Zap, 
   Smile, 
-  Layers, 
   Activity, 
+  Layers, 
   Moon, 
   Grid, 
   Scan, 
   HeartHandshake, 
-  PhoneCall, 
-  Clock, 
-  CheckCircle2, 
-  ArrowRight 
+  ChevronDown, 
+  ChevronUp, 
+  ArrowRight,
+  CheckCircle2
 } from 'lucide-react';
-import { SERVICES_CATEGORIES, SERVICES_LIST } from '../data/clinicData';
+import { CORE_SERVICES, MORE_SERVICES } from '../data/clinicData';
 
-// Map icon string names to Lucide icon components
 const iconMap = {
   Sparkles: Sparkles,
   ShieldCheck: ShieldCheck,
   Zap: Zap,
   Smile: Smile,
-  Layers: Layers,
   Activity: Activity,
+  Layers: Layers,
   Moon: Moon,
   Grid: Grid,
   Scan: Scan,
-  HeartHandshake: HeartHandshake,
-  PhoneCall: PhoneCall
+  HeartHandshake: HeartHandshake
 };
 
 export default function ServicesSection({ onOpenBooking }) {
-  const [activeCategory, setActiveCategory] = useState('All');
-
-  const filteredServices = activeCategory === 'All'
-    ? SERVICES_LIST
-    : SERVICES_LIST.filter(s => s.category === activeCategory);
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <section id="services" className="section">
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">
-            <Sparkles size={16} />
-            Comprehensive Dental Treatments
+            <Sparkles size={15} />
+            Key Dental Treatments
           </span>
-          <h2 className="section-title">World-Class Dental Solutions Under One Roof</h2>
+          <h2 className="section-title">Gentle, Tech-Driven Dental Solutions</h2>
           <p className="section-desc">
-            From single-sitting painless root canals to permanent titanium dental implants and cosmetic smile design, experience gentle, tech-driven dentistry in Haralur.
+            Painless procedures, modern equipment, and conservative treatment plans designed for long-term oral health.
           </p>
         </div>
 
-        {/* Category Tabs */}
-        <div className="services-tabs">
-          {SERVICES_CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              className={`tab-btn ${activeCategory === cat ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat)}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Services Grid */}
+        {/* 6 Core Services Grid */}
         <div className="services-grid">
-          {filteredServices.map((service) => {
+          {CORE_SERVICES.map((service) => {
             const IconComponent = iconMap[service.icon] || Sparkles;
 
             return (
               <div key={service.id} className="service-card">
                 <div className="service-header">
                   <div className="service-icon-box">
-                    <IconComponent size={24} />
+                    <IconComponent size={22} />
                   </div>
                   <span className="service-tag">{service.tag}</span>
                 </div>
 
                 <h3 className="service-title">{service.title}</h3>
-                <p className="service-desc">{service.shortDesc}</p>
+                <p className="service-desc">{service.desc}</p>
 
-                <ul className="service-benefits-list">
-                  {service.benefits.map((benefit, i) => (
-                    <li key={i} className="service-benefit-item">
-                      <CheckCircle2 size={15} />
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="service-key-point">
+                  <CheckCircle2 size={14} className="text-primary" />
+                  <span>{service.highlight}</span>
+                </div>
 
                 <div className="service-footer">
-                  <div className="service-duration">
-                    <Clock size={14} />
-                    <span>{service.duration}</span>
-                  </div>
-
                   <button 
                     onClick={() => onOpenBooking(service.title)}
-                    className="service-action-link"
+                    className="service-book-btn"
                   >
-                    <span>Book Slot</span>
+                    <span>Book Treatment</span>
                     <ArrowRight size={14} />
                   </button>
                 </div>
@@ -110,7 +82,50 @@ export default function ServicesSection({ onOpenBooking }) {
             );
           })}
         </div>
+
+        {/* Expandable More Treatments */}
+        {showMore && (
+          <div className="more-services-grid" style={{ marginTop: '24px' }}>
+            {MORE_SERVICES.map((service) => {
+              const IconComponent = iconMap[service.icon] || Sparkles;
+
+              return (
+                <div key={service.id} className="service-card more-card">
+                  <div className="service-header">
+                    <div className="service-icon-box">
+                      <IconComponent size={20} />
+                    </div>
+                    <span className="service-tag">{service.tag}</span>
+                  </div>
+                  <h3 className="service-title">{service.title}</h3>
+                  <p className="service-desc">{service.desc}</p>
+                  <div className="service-footer">
+                    <button 
+                      onClick={() => onOpenBooking(service.title)}
+                      className="service-book-btn"
+                    >
+                      <span>Book Slot</span>
+                      <ArrowRight size={14} />
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Toggle Button for More Services */}
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+          <button 
+            className="btn btn-outline-dark btn-sm"
+            onClick={() => setShowMore(!showMore)}
+          >
+            <span>{showMore ? "Show Fewer Treatments" : "View All Specialized Treatments (+4)"}</span>
+            {showMore ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+          </button>
+        </div>
       </div>
     </section>
   );
 }
+

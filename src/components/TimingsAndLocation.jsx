@@ -3,19 +3,19 @@ import { Clock, MapPin, Navigation, Phone, MessageCircle, Calendar, Sun, Moon, C
 import { CLINIC_INFO } from '../data/clinicData';
 
 export default function TimingsAndLocation({ onOpenBooking }) {
-  const { timings, address, contact } = CLINIC_INFO;
+  const { address, contact, timings } = CLINIC_INFO;
 
   return (
     <section id="location" className="section">
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">
-            <Clock size={16} />
-            Timings & Clinic Location
+            <Clock size={15} />
+            Timings & Location
           </span>
           <h2 className="section-title">Visit Us in Haralur, Bangalore</h2>
           <p className="section-desc">
-            Conveniently located at Birla Circle on Haralur Main Road with morning and evening OPD sessions all 7 days a week.
+            Conveniently located at Birla Circle on Haralur Main Road with morning and evening sessions every day.
           </p>
         </div>
 
@@ -23,9 +23,9 @@ export default function TimingsAndLocation({ onOpenBooking }) {
           {/* Left: Schedule Card */}
           <div className="schedule-card">
             <div className="schedule-header">
-              <h3 style={{ fontSize: '1.4rem', color: '#0f172a' }}>Clinic Working Hours</h3>
+              <h3 style={{ fontSize: '1.25rem', color: '#0f172a' }}>Working Hours</h3>
               <span className="open-all-days-badge">
-                <CheckCircle2 size={14} />
+                <CheckCircle2 size={13} />
                 Open All 7 Days
               </span>
             </div>
@@ -33,42 +33,30 @@ export default function TimingsAndLocation({ onOpenBooking }) {
             {/* Sessions Highlight */}
             <div className="schedule-sessions-row">
               <div className="session-box">
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', color: '#d97706', marginBottom: '6px' }}>
-                  <Sun size={18} />
-                  <h5>Morning Session</h5>
+                <div className="session-header-tag morning">
+                  <Sun size={16} />
+                  <span>Morning OPD</span>
                 </div>
-                <p>10:00 AM – 01:30 PM</p>
+                <div className="session-time-text">{timings.morning}</div>
               </div>
 
               <div className="session-box">
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', color: '#0284c7', marginBottom: '6px' }}>
-                  <Moon size={18} />
-                  <h5>Evening Session</h5>
+                <div className="session-header-tag evening">
+                  <Moon size={16} />
+                  <span>Evening OPD</span>
                 </div>
-                <p>05:00 PM – 09:00 PM</p>
+                <div className="session-time-text">{timings.evening}</div>
               </div>
             </div>
 
-            {/* Day by Day Schedule Table */}
-            <table className="schedule-table">
-              <tbody>
-                {timings.detailedSchedule.map((item) => (
-                  <tr key={item.day}>
-                    <td>{item.day}</td>
-                    <td>
-                      <span style={{ color: '#0d7c8a', fontWeight: 600 }}>10:00 AM - 1:30 PM</span>
-                      <span style={{ margin: '0 8px', color: '#cbd5e1' }}>|</span>
-                      <span style={{ color: '#0284c7', fontWeight: 600 }}>5:00 PM - 9:00 PM</span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <div className="schedule-note">
+              <p>🗓️ <strong>Monday – Sunday:</strong> Both morning and evening slots open. Emergency same-day appointments available.</p>
+            </div>
 
-            <div style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <div className="schedule-btn-group">
               <button onClick={() => onOpenBooking()} className="btn btn-primary" style={{ flex: '1 1 auto' }}>
-                <Calendar size={16} />
-                <span>Reserve a Slot</span>
+                <Calendar size={15} />
+                <span>Book Appointment (₹350)</span>
               </button>
               <a 
                 href={`https://wa.me/${contact.whatsappNumber}?text=Hi%20SLV%20Dental,%20is%20a%20slot%20available%20today?`}
@@ -76,36 +64,24 @@ export default function TimingsAndLocation({ onOpenBooking }) {
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"
               >
-                <MessageCircle size={16} />
-                <span>Check Today's Availability</span>
+                <MessageCircle size={15} />
+                <span>WhatsApp</span>
               </a>
             </div>
           </div>
 
-          {/* Right: Location & Map Card */}
+          {/* Right: Address & Map Card */}
           <div className="location-card">
-            <h3 style={{ fontSize: '1.4rem', color: '#0f172a', marginBottom: '18px' }}>
-              Find Our Clinic
-            </h3>
-
-            {/* Address Details */}
             <div className="address-box">
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                <MapPin size={22} color="#0d7c8a" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <div>
-                  <h4 className="address-title">SLV Dental Clinic & Implant Centre</h4>
-                  <p className="address-text">
-                    {address.line1}, {address.line2}, {address.area}, {address.city}, {address.state} — {address.pincode}
-                  </p>
-
-                  <div className="landmarks-list">
-                    {address.landmarks.map((landmark, idx) => (
-                      <span key={idx} className="landmark-pill">
-                        📍 {landmark}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+              <MapPin size={20} className="text-primary" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <h4 className="address-title">SLV Dental Clinic & Implant Centre</h4>
+                <p className="address-text">
+                  {address.line1}, {address.line2}, {address.area} — {address.pincode}
+                </p>
+                <span className="landmark-pill">
+                  📍 {address.landmarks}
+                </span>
               </div>
             </div>
 
@@ -113,27 +89,27 @@ export default function TimingsAndLocation({ onOpenBooking }) {
             <div className="map-embed-wrap">
               <iframe
                 title="SLV Dental Clinic Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.28821558231!2d77.65453867598858!3d12.894250687413645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b6932a9341%3A0xb695eef9a8d9b158!2sSLV%20Dental%20Clinic%20And%20Implant%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src={contact.googleMapsEmbedUrl}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
 
-            {/* Action Buttons */}
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {/* Map Actions */}
+            <div className="location-actions-row">
               <a
                 href={contact.googleMapsDirectionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-secondary"
+                className="btn btn-secondary btn-sm"
                 style={{ flex: '1 1 auto' }}
               >
-                <Navigation size={16} />
+                <Navigation size={15} />
                 <span>Get Directions on Google Maps</span>
               </a>
 
-              <a href={`tel:${contact.phonePrimary}`} className="btn btn-outline-dark">
-                <Phone size={16} />
+              <a href={`tel:${contact.phonePrimary}`} className="btn btn-outline-dark btn-sm">
+                <Phone size={15} />
                 <span>Call Clinic</span>
               </a>
             </div>
@@ -143,3 +119,4 @@ export default function TimingsAndLocation({ onOpenBooking }) {
     </section>
   );
 }
+

@@ -1,36 +1,26 @@
 import React from 'react';
-import { 
-  CheckCircle, 
-  Clock, 
-  Scan, 
-  HeartPulse, 
-  PhoneCall, 
-  Shield, 
-  ShieldCheck 
-} from 'lucide-react';
+import { CheckCircle, Clock, HeartPulse, PhoneCall, ShieldCheck } from 'lucide-react';
 import { WHY_CHOOSE_US } from '../data/clinicData';
 
 const iconMap = {
   CheckCircle: CheckCircle,
-  Clock: Clock,
-  Scan: Scan,
   HeartPulse: HeartPulse,
-  PhoneCall: PhoneCall,
-  Shield: Shield
+  Clock: Clock,
+  PhoneCall: PhoneCall
 };
 
-export default function WhyChooseUs({ onOpenBooking }) {
+export default function WhyChooseUs() {
   return (
     <section id="why-us" className="section section-alt">
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">
-            <ShieldCheck size={16} />
-            The SLV Dental Difference
+            <ShieldCheck size={15} />
+            The SLV Dental Promise
           </span>
           <h2 className="section-title">Why Patients in Haralur Trust Us</h2>
           <p className="section-desc">
-            We believe dental visits should be transparent, gentle, and strictly focused on what is genuinely best for your natural teeth.
+            Ethical dentistry focused purely on preserving your natural teeth with honest advice and transparent care.
           </p>
         </div>
 
@@ -41,7 +31,7 @@ export default function WhyChooseUs({ onOpenBooking }) {
             return (
               <div key={idx} className="why-card">
                 <div className="why-icon-box">
-                  <IconComp size={26} />
+                  <IconComp size={22} />
                 </div>
                 <h3 className="why-title">{item.title}</h3>
                 <p className="why-desc">{item.desc}</p>
@@ -53,3 +43,4 @@ export default function WhyChooseUs({ onOpenBooking }) {
     </section>
   );
 }
+

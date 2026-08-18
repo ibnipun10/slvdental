@@ -10,12 +10,12 @@ export default function ClinicGallery() {
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">
-            <ImageIcon size={16} />
-            Clinic Ambiance & Technology
+            <ImageIcon size={15} />
+            Clinic Infrastructure
           </span>
           <h2 className="section-title">Inside SLV Dental Clinic</h2>
           <p className="section-desc">
-            Take a look at our hygienic, modern clinic operatory, diagnostic setup, and welcoming environment located at Birla Circle, Haralur.
+            Modern, hygienic operatory and digital diagnostic suite at Birla Circle, Haralur.
           </p>
         </div>
 

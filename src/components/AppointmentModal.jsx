@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { X, Calendar, Clock, User, Phone, MessageSquare, CheckCircle, MessageCircle, ShieldCheck } from 'lucide-react';
-import { CLINIC_INFO, SERVICES_LIST } from '../data/clinicData';
+import { X, Calendar, MessageCircle, CheckCircle, ShieldCheck } from 'lucide-react';
+import { CLINIC_INFO, CORE_SERVICES, MORE_SERVICES } from '../data/clinicData';
 
 export default function AppointmentModal({ isOpen, onClose, preselectedTreatment }) {
   const [formData, setFormData] = useState({
@@ -50,6 +50,8 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
     onClose();
   };
 
+  const allTreatments = [...CORE_SERVICES, ...MORE_SERVICES];
+
   return (
     <div className="modal-overlay" onClick={handleReset}>
       <div className="modal-card" onClick={(e) => e.stopPropagation()}>
@@ -64,8 +66,8 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
                 <ShieldCheck size={14} />
                 Doctor Consultation: ₹350
               </span>
-              <h3>Book a Dental Appointment</h3>
-              <p>Reserve a consultation with Dr. Abhisheak R Naik at our Haralur clinic.</p>
+              <h3>Book Dental Appointment</h3>
+              <p>Reserve your slot with Dr. Abhisheak R Naik at Birla Circle, Haralur.</p>
             </div>
 
             <form onSubmit={handleSubmit} className="booking-form">
@@ -79,8 +81,8 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
                   required
                 >
                   <option value="General Consultation & Checkup">General Consultation & Checkup (₹350)</option>
-                  <option value="Severe Toothache / Emergency">Acute Toothache / Dental Emergency</option>
-                  {SERVICES_LIST.map((s) => (
+                  <option value="Severe Toothache / Emergency">Acute Toothache / Emergency</option>
+                  {allTreatments.map((s) => (
                     <option key={s.id} value={s.title}>
                       {s.title}
                     </option>

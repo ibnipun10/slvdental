@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, CheckCircle, Calendar, MessageCircle, Phone, Award, ShieldCheck, Clock } from 'lucide-react';
+import { Star, CheckCircle, Calendar, MessageCircle, Phone, ShieldCheck } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import clinicChair from '../assets/clinic_chair.jpg';
 
@@ -14,11 +14,11 @@ export default function Hero({ onOpenBooking }) {
             <div className="hero-rating-pill">
               <div className="hero-rating-stars">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} fill="#f59e0b" color="#f59e0b" />
+                  <Star key={i} size={15} fill="#f59e0b" color="#f59e0b" />
                 ))}
               </div>
               <div className="hero-rating-text">
-                <strong>5.0 / 5.0</strong> Rating <span>(455+ Verified Patient Stories)</span>
+                <strong>5.0 / 5.0</strong> <span>(455+ Practo & Google Stories)</span>
               </div>
             </div>
 
@@ -29,34 +29,30 @@ export default function Hero({ onOpenBooking }) {
 
             {/* Subtitle */}
             <p className="hero-desc">
-              Led by <strong>Dr. Abhisheak R Naik</strong> (BDS, MDS Oral Medicine & Radiology with 15+ Years Experience). Specializing in painless single-sitting Root Canals, Dental Implants, 15-minute Wisdom Tooth Extractions & Cosmetic Smile Makeovers.
+              Led by <strong>Dr. Abhisheak R Naik</strong> (BDS, MDS Oral Medicine & Radiology • 15+ Years Exp). Painless Root Canals, Implants & 15-Minute Extractions with conservative care.
             </p>
 
-            {/* Key Value Points */}
-            <div className="hero-highlights">
-              <div className="hero-highlight-item">
-                <CheckCircle size={18} />
-                <span>Honest Diagnosis (No Unneeded RCTs)</span>
-              </div>
-              <div className="hero-highlight-item">
-                <CheckCircle size={18} />
-                <span>Open All 7 Days (Morning & Evening)</span>
-              </div>
-              <div className="hero-highlight-item">
-                <CheckCircle size={18} />
-                <span>In-House Digital Mini X-Rays</span>
-              </div>
-              <div className="hero-highlight-item">
-                <CheckCircle size={18} />
-                <span>Personal WhatsApp Post-Op Follow-up</span>
-              </div>
+            {/* Key Quick Badges */}
+            <div className="hero-badges-row">
+              <span className="hero-badge-chip">
+                <CheckCircle size={15} />
+                <span>No Unneeded RCTs</span>
+              </span>
+              <span className="hero-badge-chip">
+                <CheckCircle size={15} />
+                <span>Open All 7 Days</span>
+              </span>
+              <span className="hero-badge-chip">
+                <CheckCircle size={15} />
+                <span>Digital Mini X-Rays</span>
+              </span>
             </div>
 
-            {/* Call To Action Row */}
+            {/* Call To Action Buttons */}
             <div className="hero-cta-group">
               <button onClick={() => onOpenBooking()} className="btn btn-primary btn-lg">
                 <Calendar size={18} />
-                <span>Book Appointment</span>
+                <span>Book Appointment (₹350)</span>
               </button>
 
               <a 
@@ -66,40 +62,28 @@ export default function Hero({ onOpenBooking }) {
                 className="btn btn-whatsapp btn-lg"
               >
                 <MessageCircle size={18} />
-                <span>Chat on WhatsApp</span>
+                <span>WhatsApp</span>
               </a>
 
-              <a href={`tel:${CLINIC_INFO.contact.phonePrimary}`} className="btn btn-outline-dark btn-lg">
+              <a href={`tel:${CLINIC_INFO.contact.phonePrimary}`} className="btn btn-outline-dark btn-lg hero-call-btn">
                 <Phone size={18} />
                 <span>Call Clinic</span>
               </a>
             </div>
 
-            {/* Consultation Fee Callout */}
-            <div className="hero-fee-badge">
-              <ShieldCheck size={18} />
-              <span>Standard Consultation: ₹350 • No Hidden Booking Fees • 100% Sterilized Operatory</span>
+            {/* Trust Micro-bar */}
+            <div className="hero-trust-note">
+              <ShieldCheck size={16} />
+              <span>₹350 Consultation • Birla Circle, Haralur • 100% Sterilized Operatory</span>
             </div>
           </div>
 
           {/* Right Hero Visual Card */}
           <div className="hero-visual-card">
-            {/* Top floating badge */}
-            <div className="hero-floating-badge-top">
-              <div className="badge-circle-icon">
-                <Award size={20} />
-              </div>
-              <div>
-                <strong style={{ fontSize: '0.875rem', color: '#0f172a', display: 'block' }}>Practo Prime Verified</strong>
-                <span style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: 700 }}>100% Patient Recommended</span>
-              </div>
-            </div>
-
-            {/* Main Clinic Image */}
             <div className="hero-main-img-wrap">
               <img 
                 src={clinicChair} 
-                alt="SLV Dental Clinic Modern Operatory" 
+                alt="SLV Dental Clinic Operatory" 
                 className="hero-main-img"
               />
             </div>
@@ -113,7 +97,7 @@ export default function Hero({ onOpenBooking }) {
               />
               <div className="hero-doc-info">
                 <h4>{CLINIC_INFO.doctor.name}</h4>
-                <p>BDS, MDS - Oral Medicine & Radiology (15+ Yrs Exp)</p>
+                <p>BDS, MDS • 15+ Yrs Clinical Experience</p>
               </div>
             </div>
           </div>
@@ -122,3 +106,4 @@ export default function Hero({ onOpenBooking }) {
     </section>
   );
 }
+

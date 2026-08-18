@@ -14,12 +14,12 @@ export default function FAQSection() {
       <div className="container">
         <div className="section-header">
           <span className="section-eyebrow">
-            <HelpCircle size={16} />
-            Frequently Asked Questions
+            <HelpCircle size={15} />
+            Quick Answers
           </span>
-          <h2 className="section-title">Common Questions Answered</h2>
+          <h2 className="section-title">Frequently Asked Questions</h2>
           <p className="section-desc">
-            Have questions about your upcoming dental visit? Here are answers to the most common queries we receive.
+            Everything you need to know about your dental appointment and treatment.
           </p>
         </div>
 
