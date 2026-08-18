@@ -9,7 +9,6 @@ import WhyChooseUs from './components/WhyChooseUs';
 import PatientReviews from './components/PatientReviews';
 import ClinicGallery from './components/ClinicGallery';
 import TimingsAndLocation from './components/TimingsAndLocation';
-import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import AppointmentModal from './components/AppointmentModal';
 import FloatingActions from './components/FloatingActions';
@@ -45,7 +44,7 @@ export default function App() {
       {/* Meet the Lead Doctor Section */}
       <DoctorProfile onOpenBooking={handleOpenBooking} />
 
-      {/* 22+ Surgeries & Treatments Showcase */}
+      {/* Treatments Showcase */}
       <ServicesSection onOpenBooking={handleOpenBooking} />
 
       {/* Why Choose SLV Dental */}
@@ -59,9 +58,6 @@ export default function App() {
 
       {/* Timings Schedule & Google Map Directions */}
       <TimingsAndLocation onOpenBooking={handleOpenBooking} />
-
-      {/* Frequently Asked Questions */}
-      <FAQSection />
 
       {/* Clinic Footer */}
       <Footer onOpenBooking={handleOpenBooking} />

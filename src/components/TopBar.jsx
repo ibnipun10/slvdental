@@ -9,7 +9,7 @@ export default function TopBar() {
         <div className="top-bar-left">
           <span className="top-bar-item">
             <Clock size={13} />
-            <span>Mon–Sun: <strong>10am–1:30pm | 5pm–9pm</strong></span>
+            <span>Mon–Sun: <strong>10am–2pm | 5pm–9pm</strong></span>
           </span>
           <span className="top-bar-item">
             <MapPin size={13} />

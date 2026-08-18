@@ -42,7 +42,7 @@ export const CLINIC_INFO = {
   },
   timings: {
     summary: "Open All 7 Days (Mon – Sun)",
-    morning: "10:00 AM – 01:30 PM",
+    morning: "10:00 AM – 02:00 PM",
     evening: "05:00 PM – 09:00 PM",
     badge: "Open Today"
   },
@@ -183,7 +183,7 @@ export const WHY_CHOOSE_US = [
   {
     icon: "Clock",
     title: "Open 7 Days a Week",
-    desc: "Morning (10am–1:30pm) & Evening (5pm–9pm) slots so you never have to take leave from work."
+    desc: "Morning (10am–2pm) & Evening (5pm–9pm) slots so you never have to take leave from work."
   },
   {
     icon: "PhoneCall",
@@ -220,24 +220,5 @@ export const CLINIC_GALLERY = [
     subtitle: "1st Floor, Above Ramdev Medicals",
     src: clinicBoard,
     alt: "SLV Dental Clinic Exterior & Entrance"
-  }
-];
-
-export const FAQS = [
-  {
-    q: "Is Root Canal Treatment (RCT) painful at SLV Dental?",
-    a: "No. With modern local anesthesia, rotary endodontics, and digital apex locators, RCT is virtually painless and provides immediate toothache relief."
-  },
-  {
-    q: "Is the clinic open on Saturdays and Sundays?",
-    a: "Yes, we are open all 7 days a week from 10:00 AM to 01:30 PM (Morning) and 05:00 PM to 09:00 PM (Evening)."
-  },
-  {
-    q: "Do I need an appointment or are walk-ins accepted?",
-    a: "Both walk-ins and booked appointments are welcome. Booking in advance helps you get your preferred time slot with zero wait time."
-  },
-  {
-    q: "Where is the clinic located in Haralur?",
-    a: "We are at #99/4, 1st Floor, Birla Circle, Haralur Main Road (Above Ramdev Medicals, Opposite Passion Apartment)."
   }
 ];

@@ -36,8 +36,7 @@ export default function Footer({ onOpenBooking }) {
               <li><a href="#doctor" className="footer-link">Dr. Abhisheak R Naik</a></li>
               <li><a href="#why-us" className="footer-link">Why Choose Us</a></li>
               <li><a href="#reviews" className="footer-link">Patient Reviews</a></li>
-              <li><a href="#location" className="footer-link">Timings & Map</a></li>
-              <li><a href="#faq" className="footer-link">FAQs</a></li>
+              <li><a href="#location" className="footer-link">Timings & Location</a></li>
             </ul>
           </div>
 
@@ -59,7 +58,7 @@ export default function Footer({ onOpenBooking }) {
 
             <div className="footer-contact-item">
               <Clock size={16} />
-              <span>Mon – Sun: 10:00 AM – 1:30 PM & 5:00 PM – 9:00 PM</span>
+              <span>Mon – Sun: 10:00 AM – 2:00 PM & 5:00 PM – 9:00 PM</span>
             </div>
 
             <div className="footer-social-links">

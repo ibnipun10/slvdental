@@ -19,8 +19,7 @@ export default function Navbar({ onOpenBooking }) {
     { name: 'Dr. Abhisheak', href: '#doctor' },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'Location & Hours', href: '#location' },
-    { name: 'FAQ', href: '#faq' }
+    { name: 'Timings & Location', href: '#location' }
   ];
 
   const handleLinkClick = () => {

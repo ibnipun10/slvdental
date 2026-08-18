@@ -8,7 +8,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
     phone: '',
     treatment: preselectedTreatment || 'General Consultation & Checkup',
     preferredDate: '',
-    preferredSlot: 'Morning (10:00 AM - 01:30 PM)',
+    preferredSlot: 'Morning (10:00 AM - 02:00 PM)',
     notes: ''
   });
 
@@ -44,7 +44,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
       phone: '',
       treatment: 'General Consultation & Checkup',
       preferredDate: '',
-      preferredSlot: 'Morning (10:00 AM - 01:30 PM)',
+      preferredSlot: 'Morning (10:00 AM - 02:00 PM)',
       notes: ''
     });
     onClose();
@@ -143,7 +143,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedTreatment
                     onChange={(e) => setFormData({ ...formData, preferredSlot: e.target.value })}
                     required
                   >
-                    <option value="Morning (10:00 AM - 01:30 PM)">Morning: 10:00 AM – 01:30 PM</option>
+                    <option value="Morning (10:00 AM - 02:00 PM)">Morning: 10:00 AM – 02:00 PM</option>
                     <option value="Evening (05:00 PM - 09:00 PM)">Evening: 05:00 PM – 09:00 PM</option>
                   </select>
                 </div>
