@@ -1,7 +1,7 @@
-import drPhoto from '../assets/dr_abhisheak_naik.jpg';
-import clinicChair from '../assets/clinic_chair.jpg';
-import clinicRoom from '../assets/clinic_room.jpg';
-import clinicBoard from '../assets/clinic_board.jpg';
+import drPhoto from '../assets/myimage.jpeg';
+import clinicChair from '../assets/clinic.jpeg';
+import clinicRoom from '../assets/myimage2.jpeg';
+import clinicPatient from '../assets/patient.jpeg';
 
 export const CLINIC_INFO = {
   name: "SLV Dental Clinic & Implant Centre",
@@ -16,9 +16,9 @@ export const CLINIC_INFO = {
     landmarks: "Above Ramdev Medicals, Birla Circle (Opp. Passion Apartment)"
   },
   contact: {
-    phonePrimary: "+91 98333 87738",
-    phoneDisplay: "+91 98333 87738",
-    whatsappNumber: "919833387738",
+    phonePrimary: "+91 80953 84902",
+    phoneDisplay: "+91 80953 84902",
+    whatsappNumber: "918095384902",
     email: "info@slvdentalclinic.com",
     practoUrl: "https://www.practo.com/bangalore/clinic/slv-dental-clinic-implant-centre-harlur",
     googleShareUrl: "https://share.google/6N8NLQaNhfyj9xOPF",
@@ -209,16 +209,16 @@ export const CLINIC_GALLERY = [
   },
   {
     id: 3,
-    title: "Consultation & X-Ray Suite",
-    subtitle: "Chairside digital diagnostics",
+    title: "Consultation & Diagnostics Suite",
+    subtitle: "Expert consultation & gentle dental care",
     src: clinicRoom,
     alt: "SLV Dental Clinic Consultation Room"
   },
   {
     id: 4,
-    title: "Birla Circle Clinic Location",
-    subtitle: "1st Floor, Above Ramdev Medicals",
-    src: clinicBoard,
-    alt: "SLV Dental Clinic Exterior & Entrance"
+    title: "Gentle Family Dentistry",
+    subtitle: "Painless treatment & trusted by families",
+    src: clinicPatient,
+    alt: "Happy Patients at SLV Dental Clinic"
   }
 ];

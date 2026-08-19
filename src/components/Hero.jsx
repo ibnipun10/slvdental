@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star, CheckCircle, Calendar, MessageCircle, Phone, ShieldCheck } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
-import clinicChair from '../assets/clinic_chair.jpg';
+import clinicChair from '../assets/clinic.jpeg';
 
 export default function Hero({ onOpenBooking }) {
   return (

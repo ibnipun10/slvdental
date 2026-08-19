@@ -585,6 +585,7 @@
       height: 48px;
       border-radius: var(--radius-full);
       object-fit: cover;
+      object-position: center 20%;
       border: 2px solid var(--primary);
       flex-shrink: 0;
     }
@@ -672,6 +673,7 @@
       width: 100%;
       height: 380px;
       object-fit: cover;
+      object-position: center 15%;
       display: block;
     }
 
@@ -1519,10 +1521,10 @@
         </span>
       </div>
       <div class="top-bar-right">
-        <a href="tel:+919986332585" class="top-bar-item">
-          📞 <strong>+91 99863 32585</strong>
+        <a href="tel:+918095384902" class="top-bar-item">
+          📞 <strong>+91 80953 84902</strong>
         </a>
-        <a href="https://wa.me/919986332585?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="top-bar-item top-bar-whatsapp">
+        <a href="https://wa.me/918095384902?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="top-bar-item top-bar-whatsapp">
           💬 WhatsApp
         </a>
       </div>
@@ -1549,7 +1551,7 @@
       </ul>
 
       <div class="nav-actions">
-        <a href="tel:+919986332585" class="btn btn-outline-dark btn-sm desktop-only-btn">
+        <a href="tel:+918095384902" class="btn btn-outline-dark btn-sm desktop-only-btn">
           📞 Call Clinic
         </a>
         <button onclick="openBookingModal()" class="btn btn-primary btn-sm">
@@ -1585,8 +1587,8 @@
         <button onclick="toggleMobileMenu(); openBookingModal();" class="btn btn-primary btn-lg" style="width: 100%;">
           📅 Book Appointment
         </button>
-        <a href="tel:+919986332585" class="btn btn-outline-dark btn-lg" style="width: 100%;">
-          📞 Call +91 99863 32585
+        <a href="tel:+918095384902" class="btn btn-outline-dark btn-lg" style="width: 100%;">
+          📞 Call +91 80953 84902
         </a>
       </div>
     </div>
@@ -1620,10 +1622,10 @@
             <button onclick="openBookingModal()" class="btn btn-primary btn-lg">
               📅 Book Appointment
             </button>
-            <a href="https://wa.me/919986332585?text=Hi%20Dr.%20Abhisheak,%20I%20would%20like%20to%20consult%20regarding%20dental%20treatment%20at%20SLV%20Dental%20Clinic." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <a href="https://wa.me/918095384902?text=Hi%20Dr.%20Abhisheak,%20I%20would%20like%20to%20consult%20regarding%20dental%20treatment%20at%20SLV%20Dental%20Clinic." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
               💬 WhatsApp
             </a>
-            <a href="tel:+919986332585" class="btn btn-outline-dark btn-lg hero-call-btn">
+            <a href="tel:+918095384902" class="btn btn-outline-dark btn-lg hero-call-btn">
               📞 Call Clinic
             </a>
           </div>
@@ -1635,10 +1637,10 @@
 
         <div class="hero-visual-card">
           <div class="hero-main-img-wrap">
-            <img src="./assets/clinic_chair.jpg" alt="SLV Dental Clinic Treatment Operatory" class="hero-main-img" />
+            <img src="./assets/clinic.jpeg" alt="SLV Dental Clinic Treatment Operatory" class="hero-main-img" />
           </div>
           <div class="hero-floating-doctor">
-            <img src="./assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="hero-doc-avatar" />
+            <img src="./assets/myimage.jpeg" alt="Dr. Abhisheak R Naik" class="hero-doc-avatar" />
             <div class="hero-doc-info">
               <h4>Dr. Abhisheak R Naik</h4>
               <p>BDS, MDS • 15+ Yrs Exp • 100% Practo Recommended</p>
@@ -1688,7 +1690,7 @@
 
       <div class="doctor-card">
         <div class="doctor-img-container">
-          <img src="./assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="doctor-photo" />
+          <img src="./assets/myimage.jpeg" alt="Dr. Abhisheak R Naik" class="doctor-photo" />
           <div class="doctor-experience-tag">
             <span>🎓 15+ Years Clinical Practice</span>
           </div>
@@ -1993,35 +1995,35 @@
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-card" onclick="openLightbox('./assets/dr_abhisheak_naik.jpg', 'Dr. Abhisheak R Naik', 'Lead Dental Surgeon & Oral Radiologist')">
-          <img src="./assets/dr_abhisheak_naik.jpg" alt="Dr. Abhisheak R Naik" class="gallery-img" />
+        <div class="gallery-card" onclick="openLightbox('./assets/myimage.jpeg', 'Dr. Abhisheak R Naik', 'Lead Dental Surgeon & Oral Radiologist')">
+          <img src="./assets/myimage.jpeg" alt="Dr. Abhisheak R Naik" class="gallery-img" />
           <div class="gallery-overlay">
             <h4>Dr. Abhisheak R Naik</h4>
             <p>Lead Surgeon</p>
           </div>
         </div>
 
-        <div class="gallery-card" onclick="openLightbox('./assets/clinic_chair.jpg', 'Modern Treatment Operatory', 'Ergonomic chair & digital sterilization')">
-          <img src="./assets/clinic_chair.jpg" alt="Treatment Operatory" class="gallery-img" />
+        <div class="gallery-card" onclick="openLightbox('./assets/clinic.jpeg', 'Modern Treatment Operatory', 'Ergonomic chair & digital sterilization')">
+          <img src="./assets/clinic.jpeg" alt="Treatment Operatory" class="gallery-img" />
           <div class="gallery-overlay">
             <h4>Treatment Operatory</h4>
             <p>Sterile Operatory</p>
           </div>
         </div>
 
-        <div class="gallery-card" onclick="openLightbox('./assets/clinic_room.jpg', 'Consultation & Diagnostics', 'Digital low-radiation imaging suite')">
-          <img src="./assets/clinic_room.jpg" alt="Consultation Room" class="gallery-img" />
+        <div class="gallery-card" onclick="openLightbox('./assets/myimage2.jpeg', 'Doctor Consultation Suite', 'Expert diagnosis & gentle treatment')">
+          <img src="./assets/myimage2.jpeg" alt="Consultation Suite" class="gallery-img" />
           <div class="gallery-overlay">
             <h4>Consultation Suite</h4>
             <p>Digital Diagnostics</p>
           </div>
         </div>
 
-        <div class="gallery-card" onclick="openLightbox('./assets/clinic_board.jpg', 'Birla Circle Clinic Location', '1st Floor, Above Ramdev Medicals')">
-          <img src="./assets/clinic_board.jpg" alt="Clinic Entrance" class="gallery-img" />
+        <div class="gallery-card" onclick="openLightbox('./assets/patient.jpeg', 'Gentle Family Dentistry', 'Painless treatment & trusted by families')">
+          <img src="./assets/patient.jpeg" alt="Happy Patients at SLV Dental Clinic" class="gallery-img" />
           <div class="gallery-overlay">
-            <h4>Birla Circle Entrance</h4>
-            <p>Haralur Main Road</p>
+            <h4>Happy Patients</h4>
+            <p>Gentle Family Care</p>
           </div>
         </div>
       </div>
@@ -2064,7 +2066,7 @@
             <button onclick="openBookingModal()" class="btn btn-primary" style="flex: 1 1 auto;">
               📅 Book Appointment
             </button>
-            <a href="https://wa.me/919986332585?text=Hi%20SLV%20Dental,%20is%20a%20slot%20available%20today?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <a href="https://wa.me/918095384902?text=Hi%20SLV%20Dental,%20is%20a%20slot%20available%20today?" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
               💬 WhatsApp
             </a>
           </div>
@@ -2094,8 +2096,8 @@
             <a href="https://www.google.com/maps/dir//12.894250652369,77.657113568645" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
               🧭 Get Directions
             </a>
-            <a href="tel:+919986332585" class="btn btn-outline-dark btn-sm">
-              📞 +91 99863 32585
+            <a href="tel:+918095384902" class="btn btn-outline-dark btn-sm">
+              📞 +91 80953 84902
             </a>
           </div>
         </div>
@@ -2142,7 +2144,7 @@
           </div>
           <div class="footer-contact-item">
             <span>📞</span>
-            <a href="tel:+919986332585" style="color: #fff; font-weight: 600;">+91 99863 32585</a>
+            <a href="tel:+918095384902" style="color: #fff; font-weight: 600;">+91 80953 84902</a>
           </div>
           <div class="footer-contact-item">
             <span>⏰</span>
@@ -2236,8 +2238,8 @@
             <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;">
               💬 Book Instantly via WhatsApp
             </button>
-            <a href="tel:+919986332585" class="btn btn-outline-dark" style="width: 100%;">
-              📞 Or Call +91 99863 32585 directly
+            <a href="tel:+918095384902" class="btn btn-outline-dark" style="width: 100%;">
+              📞 Or Call +91 80953 84902 directly
             </a>
           </div>
         </form>
@@ -2269,17 +2271,17 @@
   </div>
 
   <!-- Floating Desktop WhatsApp Button -->
-  <a href="https://wa.me/919986332585?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <a href="https://wa.me/918095384902?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
     💬
   </a>
 
   <!-- Mobile Sticky Bottom Thumb Bar -->
   <div class="mobile-sticky-bar">
     <div class="mobile-sticky-inner">
-      <a href="tel:+919986332585" class="mobile-bar-btn mobile-bar-call">
+      <a href="tel:+918095384902" class="mobile-bar-btn mobile-bar-call">
         📞 Call
       </a>
-      <a href="https://wa.me/919986332585?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-bar-whatsapp">
+      <a href="https://wa.me/918095384902?text=Hi%20SLV%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-bar-whatsapp">
         💬 WhatsApp
       </a>
       <button onclick="openBookingModal()" class="mobile-bar-btn mobile-bar-book">
@@ -2360,7 +2362,7 @@
         'Hello Dr. Abhisheak (SLV Dental Clinic),\n\nI would like to book an appointment:\n• Name: ' + (name || 'Patient') + '\n• Phone: ' + (phone || 'Not provided') + '\n• Treatment: ' + treatment + '\n• Date: ' + date + '\n• Slot: ' + slot + (notes ? '\n• Details: ' + notes : '')
       );
 
-      var waUrl = 'https://wa.me/919986332585?text=' + text;
+      var waUrl = 'https://wa.me/918095384902?text=' + text;
 
       // Open WhatsApp directly
       window.open(waUrl, '_blank');

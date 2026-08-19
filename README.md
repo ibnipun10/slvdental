@@ -24,7 +24,7 @@ This website requires **NO web server, NO backend, and NO database** to run:
 - **Consultation Fee:** ₹350 (Transparent, no hidden fees)
 - **Timings:** Open All 7 Days (Mon – Sun: 10:00 AM – 1:30 PM & 5:00 PM – 9:00 PM)
 - **Address:** #99/4, 1st Floor, Birla Circle (Above Ramdev Medicals / Opp Passion Apartment), Haralur Main Road, Bangalore - 560102
-- **Contact:** +91 98333 87738 / WhatsApp direct booking / Google Maps navigation
+- **Contact:** +91 80953 84902 / WhatsApp direct booking / Google Maps navigation
 
 ---
 
